@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://cl3xk7226q8kn"]
+
+[ext_resource type="PackedScene" uid="uid://dnw03w460fy7g" path="res://Scenes/Enemy.tscn" id="1_bptf2"]
+[ext_resource type="Script" path="res://Scripts/path_follow_2d.gd" id="2_5j7ky"]
+
+[sub_resource type="Curve2D" id="Curve2D_kl7ee"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -845.658, -613.91, 0, 0, 0, 0, 334.242, -605.632, 0, 0, 0, 0, 328.323, -437.99, 0, 0, 0, 0, -806.196, -477.313, 0, 0, 0, 0, -786.465, -353.134, 0, 0, 0, 0, 298.727, -301.393, 0, 0, 0, 0, 286.889, -131.682)
+}
+point_count = 7
+
+[node name="LevelTestBench" type="Node2D"]
+position = Vector2(95, 29)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -95.0
+offset_top = -29.0
+offset_right = 1057.0
+offset_bottom = 619.0
+
+[node name="Path2D" type="Path2D" parent="."]
+position = Vector2(426.598, 295.625)
+scale = Vector2(0.506823, 0.483173)
+curve = SubResource("Curve2D_kl7ee")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(-845.658, -613.91)
+rotation = 0.00701569
+script = ExtResource("2_5j7ky")
+
+[node name="Enemy" parent="Path2D/PathFollow2D" instance=ExtResource("1_bptf2")]
