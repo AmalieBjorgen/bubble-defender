@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bhf8xbo0h5k3"]
 
 [ext_resource type="Script" path="res://Scenes/Towers/basic_bubble_tower.gd" id="1_pcvh0"]
-[ext_resource type="Texture2D" uid="uid://cqr061wxs1tcd" path="res://Assets/base_fish_attacking.png" id="2_ebkgj"]
+[ext_resource type="Texture2D" uid="uid://dmvn4e8n4aig2" path="res://Assets/base_fish_attacking.png" id="2_ebkgj"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cunc7"]
 radius = 17.0

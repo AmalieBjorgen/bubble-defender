@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://btm0glomxg6l5"]
+
+[ext_resource type="Script" path="res://Scenes/Towers/basic_tower_panel.gd" id="1_tm4xm"]
+[ext_resource type="Texture2D" uid="uid://dhv847n36r1n" path="res://Assets/base_fish_neutral.png" id="2_a8iuy"]
+
+[node name="TowerPanel" type="Panel"]
+custom_minimum_size = Vector2(80, 80)
+script = ExtResource("1_tm4xm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(39, 39)
+texture = ExtResource("2_a8iuy")
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
