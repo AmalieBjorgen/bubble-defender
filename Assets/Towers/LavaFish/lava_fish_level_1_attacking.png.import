@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cs40yyfd75i2m"
-path="res://.godot/imported/poison_fish_attacking.png-aa582718d84ddac7cd6bb7ce49ab42c0.ctex"
+uid="uid://c1bg88lohxcyg"
+path="res://.godot/imported/lava_fish_level_1_attacking.png-ed61dd9483047ab31d979816ba8ed099.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Towers/PoisonFish/poison_fish_attacking.png"
-dest_files=["res://.godot/imported/poison_fish_attacking.png-aa582718d84ddac7cd6bb7ce49ab42c0.ctex"]
+source_file="res://Assets/Towers/LavaFish/lava_fish_level_1_attacking.png"
+dest_files=["res://.godot/imported/lava_fish_level_1_attacking.png-ed61dd9483047ab31d979816ba8ed099.ctex"]
 
 [params]
 

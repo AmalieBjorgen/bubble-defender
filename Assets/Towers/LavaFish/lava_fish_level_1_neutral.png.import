@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhv847n36r1n"
-path="res://.godot/imported/base_fish_neutral.png-769d897238b2f854ebd902d9d94d17cc.ctex"
+uid="uid://qxw7swsi5vcl"
+path="res://.godot/imported/lava_fish_level_1_neutral.png-7b2401a7ae43bb3031ccd1e94b85053f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Towers/BasicFish/base_fish_neutral.png"
-dest_files=["res://.godot/imported/base_fish_neutral.png-769d897238b2f854ebd902d9d94d17cc.ctex"]
+source_file="res://Assets/Towers/LavaFish/lava_fish_level_1_neutral.png"
+dest_files=["res://.godot/imported/lava_fish_level_1_neutral.png-7b2401a7ae43bb3031ccd1e94b85053f.ctex"]
 
 [params]
 

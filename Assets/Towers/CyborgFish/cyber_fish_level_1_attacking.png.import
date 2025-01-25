@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://teaunhrq7o8o"
-path="res://.godot/imported/cyber_fish_aggro.png-c022d5ddf3ed3d775b34df2bee0a9c23.ctex"
+uid="uid://duf0pp7ri2s8l"
+path="res://.godot/imported/cyber_fish_level_1_attacking.png-2cf09dca25abaa86e2fe186b87f00997.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Towers/CyborgFish/cyber_fish_aggro.png"
-dest_files=["res://.godot/imported/cyber_fish_aggro.png-c022d5ddf3ed3d775b34df2bee0a9c23.ctex"]
+source_file="res://Assets/Towers/CyborgFish/cyber_fish_level_1_attacking.png"
+dest_files=["res://.godot/imported/cyber_fish_level_1_attacking.png-2cf09dca25abaa86e2fe186b87f00997.ctex"]
 
 [params]
 

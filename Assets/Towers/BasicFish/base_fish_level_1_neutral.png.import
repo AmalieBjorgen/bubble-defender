@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://irvygf53etco"
-path="res://.godot/imported/poison_fish_neutral.png-f1ec2c7af8a4cb69f44f8a72bbd8bdde.ctex"
+uid="uid://dhv847n36r1n"
+path="res://.godot/imported/base_fish_level_1_neutral.png-bc0e9cabc50bbf55bc4850978b5be1ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Towers/PoisonFish/poison_fish_neutral.png"
-dest_files=["res://.godot/imported/poison_fish_neutral.png-f1ec2c7af8a4cb69f44f8a72bbd8bdde.ctex"]
+source_file="res://Assets/Towers/BasicFish/base_fish_level_1_neutral.png"
+dest_files=["res://.godot/imported/base_fish_level_1_neutral.png-bc0e9cabc50bbf55bc4850978b5be1ed.ctex"]
 
 [params]
 
