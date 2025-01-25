@@ -1,9 +1,10 @@
 extends CharacterBody2D
 
 var target
-var speed = 200
+var speed = 1500
 var pathName = ""
 var damage
+var old_target
 
 func _physics_process(delta: float) -> void:
 	
@@ -16,7 +17,8 @@ func _physics_process(delta: float) -> void:
 	velocity = global_position.direction_to(target) * speed
 	
 	look_at(target)
-	
+	if old_target != null and old_target != target:
+		queue_free()
 	move_and_slide()
 
 
