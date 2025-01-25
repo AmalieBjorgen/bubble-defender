@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://b1go4oyecdqjb"]
+[gd_scene load_steps=4 format=3 uid="uid://dxaxieqlrkn2j"]
 
-[ext_resource type="PackedScene" uid="uid://btm0glomxg6l5" path="res://Scenes/Towers/BasicTowerPanel.tscn" id="1_mj7fx"]
+[ext_resource type="PackedScene" uid="uid://dvc7ysi7idhs4" path="res://Scenes/Towers/BasicTowerPanel.tscn" id="1_mj7fx"]
+[ext_resource type="PackedScene" uid="uid://b7bx8bnmenqmo" path="res://Scenes/Towers/PsycicTowerPanel.tscn" id="2_2vnw8"]
+[ext_resource type="Script" path="res://Scenes/Towers/PsycicTowerPanel.gd" id="2_cw263"]
 
 [node name="InGameUi" type="Control"]
 layout_mode = 3
@@ -36,5 +38,6 @@ vertical = true
 [node name="TowerPanel" parent="Panel/FlowContainer2" instance=ExtResource("1_mj7fx")]
 layout_mode = 2
 
-[node name="TowerPanel2" parent="Panel/FlowContainer2" instance=ExtResource("1_mj7fx")]
+[node name="TowerPanel3" parent="Panel/FlowContainer2" instance=ExtResource("2_2vnw8")]
 layout_mode = 2
+script = ExtResource("2_cw263")

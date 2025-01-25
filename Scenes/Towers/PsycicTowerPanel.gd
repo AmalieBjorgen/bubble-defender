@@ -1,6 +1,6 @@
 extends Panel
 
-@onready var tower = preload("res://Scenes/Towers/BasicBubbleTower.tscn")
+@onready var tower = preload("res://Scenes/Towers/PsycicBubbleTower.tscn")
 
 func _on_gui_input(event):
 	var temp_tower = tower.instantiate()
