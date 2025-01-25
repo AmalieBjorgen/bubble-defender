@@ -10,28 +10,32 @@ height = 68.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_7oxiw"]
 radius = 297.007
 
-[node name="BasicBubbleTower" type="StaticBody2D"]
-script = ExtResource("1_pcvh0")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-rotation = 1.5708
-shape = SubResource("CapsuleShape2D_cunc7")
-
-[node name="Aim" type="Marker2D" parent="."]
+[node name="Container" type="Node2D"]
 
 [node name="BasicBubbleSprite" type="Sprite2D" parent="."]
 scale = Vector2(-1, 1)
 texture = ExtResource("2_ebkgj")
 
-[node name="Tower" type="Area2D" parent="."]
+[node name="BasicBubbleTower" type="StaticBody2D" parent="."]
+rotation = 3.14159
+scale = Vector2(1, -1)
+script = ExtResource("1_pcvh0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BasicBubbleTower"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_cunc7")
+
+[node name="Aim" type="Marker2D" parent="BasicBubbleTower"]
+
+[node name="Tower" type="Area2D" parent="BasicBubbleTower"]
 position = Vector2(21, 0)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tower"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BasicBubbleTower/Tower"]
 position = Vector2(-21, 0)
 rotation = 1.5708
 shape = SubResource("CircleShape2D_7oxiw")
 
-[node name="BulletContainer" type="Node" parent="."]
+[node name="BulletContainer" type="Node" parent="BasicBubbleTower"]
 
-[connection signal="body_entered" from="Tower" to="." method="_on_tower_body_entered"]
-[connection signal="body_exited" from="Tower" to="." method="_on_tower_body_exited"]
+[connection signal="body_entered" from="BasicBubbleTower/Tower" to="BasicBubbleTower" method="_on_tower_body_entered"]
+[connection signal="body_exited" from="BasicBubbleTower/Tower" to="BasicBubbleTower" method="_on_tower_body_exited"]
