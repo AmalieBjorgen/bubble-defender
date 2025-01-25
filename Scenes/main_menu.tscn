@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://cx10t7emr41i6"]
+
+[ext_resource type="Script" path="res://Scripts/play_game.gd" id="1_uwl6r"]
+[ext_resource type="Script" path="res://Scripts/exit_game.gd" id="2_7gof1"]
+
+[node name="Main menu" type="Node2D"]
+position = Vector2(1, 1)
+
+[node name="Edge spacing" type="MarginContainer" parent="."]
+offset_left = -1.0
+offset_top = -1.0
+offset_right = 1919.0
+offset_bottom = 1079.0
+theme_override_constants/margin_left = 120
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = 120
+theme_override_constants/margin_bottom = 80
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Edge spacing"]
+layout_mode = 2
+
+[node name="Menu" type="VBoxContainer" parent="Edge spacing/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 23
+alignment = 1
+
+[node name="Title" type="Label" parent="Edge spacing/HBoxContainer/Menu"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 75
+text = "BUBBLE DEFENDER"
+
+[node name="Play game" type="Button" parent="Edge spacing/HBoxContainer/Menu"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Play game"
+script = ExtResource("1_uwl6r")
+
+[node name="Exit game" type="Button" parent="Edge spacing/HBoxContainer/Menu"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Exit game"
+script = ExtResource("2_7gof1")
+
+[connection signal="pressed" from="Edge spacing/HBoxContainer/Menu/Play game" to="Edge spacing/HBoxContainer/Menu/Play game" method="_on_pressed"]
+[connection signal="pressed" from="Edge spacing/HBoxContainer/Menu/Exit game" to="Edge spacing/HBoxContainer/Menu/Exit game" method="_on_pressed"]
