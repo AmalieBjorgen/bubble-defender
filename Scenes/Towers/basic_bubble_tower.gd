@@ -7,6 +7,10 @@ var currentTargets = []
 var currentTarget 
 
 
+func _process(delta: float) -> void:
+	if is_instance_valid(currentTarget):
+		self.look_at(currentTarget.global_position)
+
 func _on_tower_body_entered(body: Node2D) -> void:
 	if "Enemy" in body.name:
 		var tempArray = []
