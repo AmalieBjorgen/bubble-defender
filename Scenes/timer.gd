@@ -5,5 +5,4 @@ extends Node2D
 
 
 func _on_timer_timeout() -> void:
-	print("hello")
 	add_child(path.instantiate())

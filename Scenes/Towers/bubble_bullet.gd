@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 var target
-var speed = 200
+var speed = 500
 var pathName = ""
 var damage
 
