@@ -7,11 +7,12 @@ var currentTargets = []
 var currentTarget 
 var frames = 0
 
-
 func _process(delta: float) -> void:
-	frames += 1
 	if is_instance_valid(currentTarget):
 		self.look_at(currentTarget.global_position)
+
+func _physics_process(delta: float) -> void:
+	frames += 1
 	if currentTarget != null and frames%60 == 0:
 		pathName = currentTarget.get_parent().name
 		var tempBullet = Bullet.instantiate()
