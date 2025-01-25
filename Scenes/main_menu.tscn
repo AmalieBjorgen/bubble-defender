@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cx10t7emr41i6"]
 
-[ext_resource type="Script" path="res://play_game.gd" id="1_b53pm"]
-[ext_resource type="Script" path="res://exit_game.gd" id="2_jx2id"]
+[ext_resource type="Script" path="res://play_game.gd" id="1_uwl6r"]
+[ext_resource type="Script" path="res://exit_game.gd" id="2_7gof1"]
 
 [node name="Main menu" type="Node2D"]
 position = Vector2(1, 1)
@@ -33,13 +33,13 @@ text = "BUBBLE DEFENDER"
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
 text = "Play game"
-script = ExtResource("1_b53pm")
+script = ExtResource("1_uwl6r")
 
 [node name="Exit game" type="Button" parent="Edge spacing/HBoxContainer/Menu"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
 text = "Exit game"
-script = ExtResource("2_jx2id")
+script = ExtResource("2_7gof1")
 
 [connection signal="pressed" from="Edge spacing/HBoxContainer/Menu/Play game" to="Edge spacing/HBoxContainer/Menu/Play game" method="_on_pressed"]
 [connection signal="pressed" from="Edge spacing/HBoxContainer/Menu/Exit game" to="Edge spacing/HBoxContainer/Menu/Exit game" method="_on_pressed"]
