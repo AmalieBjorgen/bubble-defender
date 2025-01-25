@@ -8,7 +8,6 @@ var currentTarget
 
 
 func _on_tower_body_entered(body: Node2D) -> void:
-	print("hello")
 	if "Enemy" in body.name:
 		var tempArray = []
 		currentTargets = get_node("Tower").get_overlapping_bodies()
