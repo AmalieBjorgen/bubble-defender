@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://dxaxieqlrkn2j"]
+[gd_scene load_steps=2 format=3 uid="uid://b1go4oyecdqjb"]
+
+[ext_resource type="PackedScene" uid="uid://btm0glomxg6l5" path="res://Scenes/Towers/BasicTowerPanel.tscn" id="1_mj7fx"]
 
 [node name="InGameUi" type="Control"]
 layout_mode = 3
@@ -21,3 +23,18 @@ offset_top = 7.0
 offset_right = 1160.0
 offset_bottom = 88.0
 scale = Vector2(0.983511, 0.834207)
+
+[node name="FlowContainer2" type="FlowContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 12.9032
+offset_top = 7.0
+offset_right = 176.903
+offset_bottom = 87.0
+scale = Vector2(2.04868, 0.843732)
+vertical = true
+
+[node name="TowerPanel" parent="Panel/FlowContainer2" instance=ExtResource("1_mj7fx")]
+layout_mode = 2
+
+[node name="TowerPanel2" parent="Panel/FlowContainer2" instance=ExtResource("1_mj7fx")]
+layout_mode = 2
