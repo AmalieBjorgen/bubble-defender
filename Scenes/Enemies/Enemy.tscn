@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dnw03w460fy7g"]
 
 [ext_resource type="Script" path="res://Scenes/Enemies/enemy.gd" id="1_05d8r"]
-[ext_resource type="Texture2D" uid="uid://dk0auuvd2emve" path="res://icon.svg" id="1_gu2qy"]
+[ext_resource type="Texture2D" uid="uid://cnkcnb10c5b84" path="res://Assets/oil_barrel_walk_1.png" id="2_2cut4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t8x4o"]
 size = Vector2(125, 125)
@@ -14,4 +14,4 @@ position = Vector2(0.5, -0.5)
 shape = SubResource("RectangleShape2D_t8x4o")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_gu2qy")
+texture = ExtResource("2_2cut4")
