@@ -14,7 +14,7 @@ var pool_health = pool_health_max
 @export var WAVE_TIMER_BETWEEN_WAVES = 30
 var wave_timer = WAVE_TIMER_BETWEEN_WAVES
 var wave_current = 0
-var wave_max = 1
+var wave_max = 7
 var has_game_overed = false
 
 var accumulated_time = 0
