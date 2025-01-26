@@ -1,2 +1,2 @@
-# bubble-defender
-Game created for GameJam 2025
+# Defenders of the Pond
+Game created for GameJam 2025.
