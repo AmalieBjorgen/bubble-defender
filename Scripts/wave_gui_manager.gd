@@ -7,6 +7,7 @@ func _ready() -> void:
 	s.wave_timer_changed.connect(wave_timer_changed)
 	s.wave_start.connect(wave_start)
 	s.game_win.connect(game_win)
+	s.game_over.connect(game_over)
 	get_node("StartWaveButton").pressed.connect(on_wave_start_button_pressed)
 	wave_timer_changed()
 	wave_start()
@@ -42,6 +43,11 @@ func game_win():
 	var n = get_node("WaveInfoContainer/CurrentWaveTimer")
 	n.set("theme_override_colors/font_color", Color(1.0, 0.7, 0.1, 1.0))
 	n.text = "VICTORY!  "
+
+func game_over():
+	var n = get_node("WaveInfoContainer/CurrentWaveTimer")
+	n.set("theme_override_colors/font_color", Color(0.2, 0.1, 0.3, 1.0))
+	n.text = "GAME OVER! "
 
 func on_wave_start_button_pressed():
 	var s = get_node("../../GameStats")

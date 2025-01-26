@@ -14,4 +14,3 @@ func _process(delta: float) -> void:
 func update():
 	var game_stats = get_node("../../../GameStats")
 	value = game_stats.pool_health * 100 / game_stats.pool_health_max
-	print(value)

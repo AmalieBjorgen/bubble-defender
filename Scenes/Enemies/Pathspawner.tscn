@@ -1,17 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://bn4xso0jqr52a"]
 
+[ext_resource type="Curve2D" uid="uid://dkt87mkmh8dfe" path="res://Resources/LevelTestBenchPath.tres" id="1_fu1d2"]
 [ext_resource type="PackedScene" uid="uid://dnw03w460fy7g" path="res://Scenes/Enemies/Enemy.tscn" id="2_2kdfy"]
-
-[sub_resource type="Curve2D" id="Curve2D_h201e"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, -1631.48, -821.183, 0, 0, 0, 0, 328.364, -821.183, 0, 0, 0, 0, 335.418, -76.3785, 0, 0, 0, 0, -43.147, -79.9465, 0, 0, 0, 0, -45.4983, -533.073, 0, 0, 0, 0, -715.629, -542.885, 0, 0, 0, 0, -721.508, -423.359, 0, 0, 0, 0, -871.993, -421.575)
-}
-point_count = 8
 
 [node name="Path2D" type="Path2D"]
 position = Vector2(1251.7, 985.628)
 scale = Vector2(0.85058, 1.1211)
-curve = SubResource("Curve2D_h201e")
+curve = ExtResource("1_fu1d2")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="."]
 position = Vector2(-1631.48, -821.183)

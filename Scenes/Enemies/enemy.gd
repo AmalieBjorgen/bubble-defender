@@ -14,11 +14,13 @@ func _physics_process(delta: float) -> void:
 	scale.x = abs(scale.x)
 	scale.x *= -1 if old_rotation >= 0 else 1
 	
-	var s = get_node("../../../../GameStats")
-	if get_parent().get_progress_ratio() == 1: s.deal_damage_to_pool(damage)
-	if health <= 0: s.gain_money(money_reward)
+	var dead = health <= 0
+	var in_pool = get_parent().get_progress_ratio() >= 0.99
 	
-	var dead = get_parent().get_progress_ratio() == 1 or health <= 0
-	if dead:
+	var s = get_node("../../../../GameStats")
+	if in_pool: s.deal_damage_to_pool(damage)
+	if dead: s.gain_money(money_reward)
+	
+	if in_pool or dead:
 		get_parent().get_parent().queue_free()
 		s.on_enemy_exit_scene()
