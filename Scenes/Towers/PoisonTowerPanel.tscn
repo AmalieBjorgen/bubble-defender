@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ngt0ts1odyhf"]
+
+[ext_resource type="Script" path="res://Scenes/Towers/PoisonTowerPanel.gd" id="1_20plm"]
+[ext_resource type="Texture2D" uid="uid://dxo55t6gvpfca" path="res://Assets/Towers/PoisonFish/poison_fish_level_1_aggro.png" id="2_dt4rj"]
+
+[node name="TowerPanel" type="Panel"]
+custom_minimum_size = Vector2(80, 80)
+script = ExtResource("1_20plm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(39, 39)
+texture = ExtResource("2_dt4rj")
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
