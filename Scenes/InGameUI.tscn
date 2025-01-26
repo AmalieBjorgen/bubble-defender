@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://dxaxieqlrkn2j"]
+[gd_scene load_steps=12 format=3 uid="uid://dxaxieqlrkn2j"]
 
 [ext_resource type="PackedScene" uid="uid://dvc7ysi7idhs4" path="res://Scenes/Towers/BasicTowerPanel.tscn" id="1_mj7fx"]
 [ext_resource type="PackedScene" uid="uid://b7bx8bnmenqmo" path="res://Scenes/Towers/PsycicTowerPanel.tscn" id="2_2vnw8"]
 [ext_resource type="Script" path="res://Scenes/Towers/PsycicTowerPanel.gd" id="2_cw263"]
+[ext_resource type="PackedScene" uid="uid://ngt0ts1odyhf" path="res://Scenes/Towers/PoisonTowerPanel.tscn" id="2_ok3ug"]
 [ext_resource type="Texture2D" uid="uid://bigohffleprip" path="res://Assets/MakerTech/HealthBar/healthbarUnder.png" id="4_2wpgv"]
 [ext_resource type="Script" path="res://Scripts/money_label.gd" id="4_1280h"]
 [ext_resource type="Script" path="res://Scripts/pool_health_bar.gd" id="4_xfcqh"]
@@ -47,6 +48,9 @@ layout_mode = 2
 [node name="TowerPanel3" parent="TowerSelect/FlowContainer/FlowContainer2" instance=ExtResource("2_2vnw8")]
 layout_mode = 2
 script = ExtResource("2_cw263")
+
+[node name="TowerPanel2" parent="TowerSelect/FlowContainer/FlowContainer2" instance=ExtResource("2_ok3ug")]
+layout_mode = 2
 
 [node name="Label" type="Label" parent="TowerSelect/FlowContainer"]
 layout_mode = 2
