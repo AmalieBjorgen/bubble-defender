@@ -1,8 +1,7 @@
-[gd_scene load_steps=12 format=4 uid="uid://cl3xk7226q8kn"]
+[gd_scene load_steps=11 format=4 uid="uid://cl3xk7226q8kn"]
 
 [ext_resource type="Script" path="res://Scripts/timer.gd" id="3_83aob"]
 [ext_resource type="Texture2D" uid="uid://ce0s6mfo5maq2" path="res://Assets/Foozle/Tileset/PNGs/Grass Tileset.png" id="3_x5i2q"]
-[ext_resource type="PackedScene" uid="uid://bhf8xbo0h5k3" path="res://Scenes/Towers/BasicBubbleTower.tscn" id="4_1svpo"]
 [ext_resource type="Texture2D" uid="uid://ke0kvhb60dkm" path="res://Assets/Foozle/Tileset/PNGs/Animated water tiles.png" id="4_tg4ws"]
 [ext_resource type="PackedScene" uid="uid://dxaxieqlrkn2j" path="res://Scenes/InGameUI.tscn" id="5_kb0wf"]
 [ext_resource type="PackedScene" uid="uid://ctnnptss6vwbm" path="res://Scenes/GameStats.tscn" id="6_w1tkb"]
@@ -1118,10 +1117,6 @@ tile_set = SubResource("TileSet_u81qo")
 script = ExtResource("3_83aob")
 
 [node name="Towers" type="Node2D" parent="."]
-
-[node name="BasicBubbleTower" parent="Towers" instance=ExtResource("4_1svpo")]
-visible = false
-position = Vector2(1365, 280)
 
 [node name="InGameUi" parent="." instance=ExtResource("5_kb0wf")]
 offset_left = -95.0

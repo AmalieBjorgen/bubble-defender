@@ -22,7 +22,8 @@ func _on_gui_input(event):
 			if get_child_count() > 1:
 				get_child(1).queue_free()
 			var path = get_tree().get_root().get_node("LevelTestBench/Towers")
-			temp_tower.global_position = event.global_position
+			var correction = Vector2(96, 32)
+			temp_tower.global_position = event.global_position - correction
 			path.add_child(temp_tower)
 	else:
 		if get_child_count() > 1:
