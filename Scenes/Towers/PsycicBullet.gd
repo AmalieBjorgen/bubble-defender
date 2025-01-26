@@ -28,6 +28,7 @@ func _physics_process(delta: float) -> void:
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if "Enemy" in body.name:
 		body.health -= damage
+		body.speed = body.speed/2
 		queue_free()
 		for i in range(damage):
 			damage -= 1

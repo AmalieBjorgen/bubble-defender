@@ -26,6 +26,7 @@ rotation = 1.5708
 shape = SubResource("CapsuleShape2D_cunc7")
 
 [node name="Aim" type="Marker2D" parent="BasicBubbleTower"]
+position = Vector2(-29, 7.43866e-05)
 
 [node name="Tower" type="Area2D" parent="BasicBubbleTower"]
 position = Vector2(21, 0)

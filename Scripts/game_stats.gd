@@ -88,3 +88,6 @@ func start_wave():
 	wave_enemies_done = 0
 	wave_current += 1
 	wave_start.emit()
+
+func get_money():
+	return money
