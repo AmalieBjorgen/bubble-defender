@@ -25,6 +25,7 @@ script = ExtResource("2_xncdj")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PoisonBubbleTower"]
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_5d0c8")
+disabled = true
 
 [node name="Aim" type="Marker2D" parent="PoisonBubbleTower"]
 position = Vector2(-29, 7.43866e-05)

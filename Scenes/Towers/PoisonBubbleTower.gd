@@ -16,7 +16,7 @@ func _process(delta: float) -> void:
 		
 		var sprite = get_parent().get_child(0)
 		sprite.scale.x = abs(sprite.scale.x)
-		var flip = rotation >= PI / 2 and rotation < PI * 3 / 2
+		var flip = not (rotation >= PI / 2 and rotation < PI * 3 / 2)
 		if flip:
 			sprite.scale.x *= -1
 			sprite.rotation = rotation - PI

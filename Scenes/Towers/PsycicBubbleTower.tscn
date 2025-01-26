@@ -25,6 +25,7 @@ script = ExtResource("1_5mokv")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PsycicBubbleTower"]
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_cunc7")
+disabled = true
 
 [node name="Aim" type="Marker2D" parent="PsycicBubbleTower"]
 position = Vector2(-29, 7.35203e-05)

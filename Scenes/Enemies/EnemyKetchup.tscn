@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://utd3qxxu1dnt"]
+[gd_scene load_steps=7 format=3 uid="uid://dkverjbbp88m7"]
 
 [ext_resource type="Script" path="res://Scenes/Enemies/enemy.gd" id="1_4nuui"]
 [ext_resource type="Texture2D" uid="uid://dvi586f8rg1bu" path="res://Assets/Enemies/ketchup_walk_1.png" id="1_nns77"]
