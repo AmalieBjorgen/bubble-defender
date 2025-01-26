@@ -29,7 +29,8 @@ func wave_start():
 	if boss_wave:
 		var kid = path_barrel.instantiate()
 		var kidc = kid.get_child(0).get_child(0)
-		kidc.health *= 10
+		kidc.max_health *= 10
+		kidc.health = kidc.max_health
 		kidc.scale.x *= 3
 		kidc.scale.y *= 3
 		kidc.damage *= 3

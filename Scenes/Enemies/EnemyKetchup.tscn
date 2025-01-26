@@ -1,7 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://dkverjbbp88m7"]
+[gd_scene load_steps=7 format=3 uid="uid://utd3qxxu1dnt"]
 
 [ext_resource type="Script" path="res://Scenes/Enemies/enemy.gd" id="1_4nuui"]
 [ext_resource type="Texture2D" uid="uid://dvi586f8rg1bu" path="res://Assets/Enemies/ketchup_walk_1.png" id="1_nns77"]
+[ext_resource type="Texture2D" uid="uid://d01lgg2jbeqyy" path="res://Assets/Wishforge/under.png" id="3_wdeso"]
+[ext_resource type="Texture2D" uid="uid://c2kd2xtn2wue0" path="res://Assets/Wishforge/progress.png" id="4_5s5yg"]
+[ext_resource type="Script" path="res://Scenes/Enemies/enemy_health_bar.gd" id="5_tjfpf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lov72"]
 size = Vector2(38, 88)
@@ -9,7 +12,6 @@ size = Vector2(38, 88)
 [node name="EnemyKetchup" type="CharacterBody2D"]
 script = ExtResource("1_4nuui")
 speed = 600
-health = 8
 damage = 5
 money_reward = 5
 frame1path = "res://Assets/Enemies/ketchup_walk_1.png"
@@ -22,3 +24,19 @@ shape = SubResource("RectangleShape2D_lov72")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -22)
 texture = ExtResource("1_nns77")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+offset_left = -42.0
+offset_top = 25.0
+offset_right = 42.0
+offset_bottom = 33.0
+value = 100.0
+nine_patch_stretch = true
+stretch_margin_left = 4
+stretch_margin_top = 4
+stretch_margin_right = 4
+stretch_margin_bottom = 4
+texture_under = ExtResource("3_wdeso")
+texture_progress = ExtResource("4_5s5yg")
+texture_progress_offset = Vector2(0, -2)
+script = ExtResource("5_tjfpf")

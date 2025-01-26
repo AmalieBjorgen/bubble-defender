@@ -2,7 +2,8 @@ extends CharacterBody2D
 
 
 @export var speed = 450
-@export var health = 10
+@export var max_health = 10
+var health = max_health
 @export var damage = 10
 @export var money_reward = 10
 
@@ -42,3 +43,6 @@ func _physics_process(delta: float) -> void:
 	if in_pool or dead:
 		get_parent().get_parent().queue_free()
 		s.on_enemy_exit_scene()
+
+func get_hp():
+	return health
