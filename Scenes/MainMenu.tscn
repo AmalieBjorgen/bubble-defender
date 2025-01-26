@@ -1,0 +1,108 @@
+[gd_scene load_steps=8 format=3 uid="uid://cx10t7emr41i6"]
+
+[ext_resource type="Script" path="res://Scripts/play_game.gd" id="1_a3crs"]
+[ext_resource type="Script" path="res://Scripts/exit_game.gd" id="2_l656v"]
+[ext_resource type="Texture2D" uid="uid://dvi586f8rg1bu" path="res://Assets/Enemies/ketchup_walk_1.png" id="3_igxl2"]
+[ext_resource type="Texture2D" uid="uid://cnkcnb10c5b84" path="res://Assets/Enemies/oil_barrel_walk_1.png" id="4_as8tp"]
+[ext_resource type="Texture2D" uid="uid://bnlbshcgh6v7i" path="res://Assets/Towers/BasicFish/base_fish_level_1_aggro.png" id="5_g1co0"]
+[ext_resource type="Texture2D" uid="uid://bi7yf7a8unjro" path="res://Assets/Towers/Psyfish/psyfish_level_1_attacking.png" id="6_oe3mo"]
+[ext_resource type="Texture2D" uid="uid://b7flb0x3ygjm1" path="res://Assets/Projectiles/psy_bubble.png" id="7_pdarg"]
+
+[node name="Main menu" type="Node2D"]
+position = Vector2(1, 1)
+
+[node name="Edge spacing" type="MarginContainer" parent="."]
+offset_left = -1.0
+offset_top = -1.0
+offset_right = 1919.0
+offset_bottom = 1079.0
+theme_override_constants/margin_left = 120
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = 120
+theme_override_constants/margin_bottom = 80
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Edge spacing"]
+layout_mode = 2
+
+[node name="Menu" type="VBoxContainer" parent="Edge spacing/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 23
+alignment = 1
+
+[node name="Title" type="Label" parent="Edge spacing/HBoxContainer/Menu"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 75
+text = "BUBBLE DEFENDER"
+
+[node name="Play game" type="Button" parent="Edge spacing/HBoxContainer/Menu"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Play game"
+script = ExtResource("1_a3crs")
+
+[node name="Exit game" type="Button" parent="Edge spacing/HBoxContainer/Menu"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Exit game"
+script = ExtResource("2_l656v")
+
+[node name="ImageArt" type="Node2D" parent="."]
+
+[node name="Ketchup" type="TextureRect" parent="ImageArt"]
+offset_left = 1274.0
+offset_top = 397.0
+offset_right = 1560.0
+offset_bottom = 717.0
+rotation = -0.523599
+texture = ExtResource("3_igxl2")
+
+[node name="Barrel" type="TextureRect" parent="ImageArt"]
+offset_left = 1443.0
+offset_top = 252.0
+offset_right = 1843.0
+offset_bottom = 772.0
+rotation = 0.261799
+scale = Vector2(0.987003, 0.994924)
+texture = ExtResource("4_as8tp")
+
+[node name="Fish1" type="TextureRect" parent="ImageArt"]
+offset_left = 1018.0
+offset_top = 269.0
+offset_right = 1361.0
+offset_bottom = 563.0
+rotation = 0.261799
+texture = ExtResource("5_g1co0")
+flip_h = true
+
+[node name="Fish2" type="TextureRect" parent="ImageArt"]
+offset_left = 1003.0
+offset_top = 651.0
+offset_right = 1224.0
+offset_bottom = 821.0
+rotation = -0.261799
+texture = ExtResource("6_oe3mo")
+flip_h = true
+
+[node name="Projectile3" type="TextureRect" parent="ImageArt"]
+offset_left = 1327.0
+offset_top = 584.0
+offset_right = 1368.0
+offset_bottom = 625.0
+texture = ExtResource("7_pdarg")
+
+[node name="Projectile2" type="TextureRect" parent="ImageArt"]
+offset_left = 1305.0
+offset_top = 639.0
+offset_right = 1346.0
+offset_bottom = 680.0
+texture = ExtResource("7_pdarg")
+
+[node name="Projectile1" type="TextureRect" parent="ImageArt"]
+offset_left = 1248.0
+offset_top = 631.0
+offset_right = 1289.0
+offset_bottom = 672.0
+texture = ExtResource("7_pdarg")
+
+[connection signal="pressed" from="Edge spacing/HBoxContainer/Menu/Play game" to="Edge spacing/HBoxContainer/Menu/Play game" method="_on_pressed"]
+[connection signal="pressed" from="Edge spacing/HBoxContainer/Menu/Exit game" to="Edge spacing/HBoxContainer/Menu/Exit game" method="_on_pressed"]
