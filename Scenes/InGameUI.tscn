@@ -131,20 +131,29 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Continue Endless mode"
 
-[node name="WaveInfoContainer" type="FlowContainer" parent="."]
-layout_mode = 0
-offset_left = 1381.0
-offset_right = 1911.0
-offset_bottom = 58.0
+[node name="WaveInfoPanel" type="Node2D" parent="."]
+position = Vector2(1381, 0)
 script = ExtResource("8_2naiw")
 
-[node name="CurrentWave" type="Label" parent="WaveInfoContainer"]
+[node name="StartWaveButton" type="Button" parent="WaveInfoPanel"]
+offset_left = -316.0
+offset_top = -1.0
+offset_right = -25.0
+offset_bottom = 65.0
+theme_override_font_sizes/font_size = 42
+text = "Start wave (G)"
+
+[node name="WaveInfoContainer" type="FlowContainer" parent="WaveInfoPanel"]
+offset_right = 530.0
+offset_bottom = 58.0
+
+[node name="CurrentWave" type="Label" parent="WaveInfoPanel/WaveInfoContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 42
 text = "Wave 1 of 7"
 
-[node name="CurrentWaveTimer" type="Label" parent="WaveInfoContainer"]
+[node name="CurrentWaveTimer" type="Label" parent="WaveInfoPanel/WaveInfoContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 42
 text = "60 seconds"

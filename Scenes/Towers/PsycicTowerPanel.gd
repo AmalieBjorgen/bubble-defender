@@ -26,7 +26,8 @@ func _on_gui_input(event):
 				if get_child_count() > 1:
 					get_child(1).queue_free()
 				var path = get_tree().get_root().get_node("LevelTestBench/Towers")
-				temp_tower.global_position = event.global_position
+				var correction = Vector2(96, 32)
+				temp_tower.global_position = event.global_position - correction
 				get_tree().get_root().get_node("LevelTestBench/GameStats").lose_money(price)
 				path.add_child(temp_tower)
 		else:

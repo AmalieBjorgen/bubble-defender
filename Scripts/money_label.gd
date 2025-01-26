@@ -14,4 +14,4 @@ func _process(delta: float) -> void:
 
 func money_changed():
 	var s = get_node("../../../../GameStats")
-	text = str(s.money)
+	text = str("Money: ", s.money)
