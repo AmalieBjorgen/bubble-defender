@@ -1131,6 +1131,8 @@ alignment = 1
 [node name="Title" type="Label" parent="Edge spacing/HBoxContainer/Menu"]
 layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 9
+theme_override_constants/outline_size = 12
 theme_override_font_sizes/font_size = 75
 text = "DEFENDERS OF THE POND"
 
