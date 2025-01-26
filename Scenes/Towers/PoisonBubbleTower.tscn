@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bb7n7w0mfe8jg"]
+[gd_scene load_steps=5 format=3 uid="uid://bghdtpyy1q1k7"]
 
 [ext_resource type="Texture2D" uid="uid://cs40yyfd75i2m" path="res://Assets/Towers/PoisonFish/poison_fish_level_1_attacking.png" id="1_k02e7"]
 [ext_resource type="Script" path="res://Scenes/Towers/PoisonBubbleTower.gd" id="2_xncdj"]

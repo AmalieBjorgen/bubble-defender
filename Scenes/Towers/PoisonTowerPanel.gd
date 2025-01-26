@@ -2,7 +2,7 @@ extends Panel
 
 @onready var tower = preload("res://Scenes/Towers/PoisonBubbleTower.tscn")
 
-var price = 50
+var price = 35
 var curr_tile
 
 func _on_gui_input(event):
