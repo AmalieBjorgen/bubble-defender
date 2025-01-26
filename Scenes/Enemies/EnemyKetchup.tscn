@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dkverjbbp88m7"]
+
+[ext_resource type="Script" path="res://Scenes/Enemies/enemy.gd" id="1_4nuui"]
+[ext_resource type="Texture2D" uid="uid://dvi586f8rg1bu" path="res://Assets/Enemies/ketchup_walk_1.png" id="1_nns77"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lov72"]
+size = Vector2(37, 63)
+
+[node name="EnemyKetchup" type="CharacterBody2D"]
+script = ExtResource("1_4nuui")
+speed = 1000
+health = 8
+damage = 5
+money_reward = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_lov72")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_nns77")

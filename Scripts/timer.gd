@@ -1,7 +1,7 @@
 extends Node2D
 
 @onready var path_barrel = preload("res://Scenes/Enemies/Pathspawner.tscn")
-@onready var path_ketchup = preload("res://Scenes/Enemies/Pathspawner.tscn") # TODO
+@onready var path_ketchup = preload("res://Scenes/Enemies/PathspawnerKetchup.tscn")
 
 var lcg_seed = 1
 

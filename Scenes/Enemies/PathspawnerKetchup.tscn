@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://btcywybpo2lya"]
+
+[ext_resource type="Curve2D" uid="uid://dkt87mkmh8dfe" path="res://Resources/LevelTestBenchPath.tres" id="1_sofng"]
+[ext_resource type="PackedScene" uid="uid://dkverjbbp88m7" path="res://Scenes/Enemies/EnemyKetchup.tscn" id="2_wxtt8"]
+
+[node name="Path2D" type="Path2D"]
+position = Vector2(1251.7, 985.628)
+scale = Vector2(0.851, 1.121)
+curve = ExtResource("1_sofng")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+position = Vector2(-1631.48, -821.183)
+
+[node name="EnemyKetchup" parent="PathFollow2D" instance=ExtResource("2_wxtt8")]
