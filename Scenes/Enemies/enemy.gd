@@ -7,7 +7,6 @@ extends CharacterBody2D
 @export var money_reward = 10
 
 func _physics_process(delta: float) -> void:
-	print(health)
 	get_parent().set_progress(get_parent().get_progress() + speed * delta)
 	var old_rotation = get_parent().rotation
 	get_parent().rotation = 0
