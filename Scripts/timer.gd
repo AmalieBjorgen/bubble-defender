@@ -11,7 +11,7 @@ func _ready():
 func wave_start():
 	var wave = get_node("../GameStats").wave_current
 	
-	var enemy_count = 5 + floor(wave * wave / 2.71828) # number "e"
+	var enemy_count = 5 + floor(wave * wave / 1.3)
 	for i in enemy_count:
 		var type = lcg() % 2
 		if type == 0:
