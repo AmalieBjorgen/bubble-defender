@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dvc7ysi7idhs4" path="res://Scenes/Towers/BasicTowerPanel.tscn" id="1_mj7fx"]
 [ext_resource type="PackedScene" uid="uid://b7bx8bnmenqmo" path="res://Scenes/Towers/PsycicTowerPanel.tscn" id="2_2vnw8"]
 [ext_resource type="Script" path="res://Scenes/Towers/PsycicTowerPanel.gd" id="2_cw263"]
-[ext_resource type="PackedScene" uid="uid://ngt0ts1odyhf" path="res://Scenes/Towers/PoisonTowerPanel.tscn" id="2_ok3ug"]
+[ext_resource type="PackedScene" uid="uid://1vy75qmtk6dd" path="res://Scenes/Towers/PoisonTowerPanel.tscn" id="2_ok3ug"]
 [ext_resource type="Texture2D" uid="uid://bigohffleprip" path="res://Assets/MakerTech/HealthBar/healthbarUnder.png" id="4_2wpgv"]
 [ext_resource type="Script" path="res://Scripts/money_label.gd" id="4_1280h"]
 [ext_resource type="Script" path="res://Scripts/pool_health_bar.gd" id="4_xfcqh"]
