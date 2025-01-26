@@ -32,7 +32,7 @@ alignment = 1
 [node name="Title" type="Label" parent="Edge spacing/HBoxContainer/Menu"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 75
-text = "BUBBLE DEFENDER"
+text = "DEFENDERS OF THE POND"
 
 [node name="Play game" type="Button" parent="Edge spacing/HBoxContainer/Menu"]
 layout_mode = 2
@@ -66,10 +66,10 @@ scale = Vector2(0.987003, 0.994924)
 texture = ExtResource("4_as8tp")
 
 [node name="Fish1" type="TextureRect" parent="ImageArt"]
-offset_left = 1018.0
-offset_top = 269.0
-offset_right = 1361.0
-offset_bottom = 563.0
+offset_left = 1040.0
+offset_top = 209.0
+offset_right = 1383.0
+offset_bottom = 503.0
 rotation = 0.261799
 texture = ExtResource("5_g1co0")
 flip_h = true
