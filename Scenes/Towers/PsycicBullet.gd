@@ -9,8 +9,7 @@ func _ready() -> void:
 	var pathSpawnerNode = get_tree().get_root().get_node("LevelTestBench/PathSpawner")
 	for i in pathSpawnerNode.get_child_count():
 		if pathSpawnerNode.get_child(i).name == pathName:
-			if pathSpawnerNode.get_child(1) == null or pathSpawnerNode.get_child(1).get_child(0) == null: continue # temp bugfix
-			target = pathSpawnerNode.get_child(1).get_child(0).get_child(0)
+			target = pathSpawnerNode.get_child(0).get_child(0).get_child(0)
 			if target != null:
 				break
 
