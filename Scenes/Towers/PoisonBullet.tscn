@@ -4,15 +4,15 @@
 [ext_resource type="Texture2D" uid="uid://dfxnlf0l4iwna" path="res://Assets/Projectiles/poisonbubble.png" id="2_rk5o2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8qhnp"]
+radius = 21.0238
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_srnp2"]
-radius = 14.0357
+radius = 24.0208
 
 [node name="BubbleBullet" type="CharacterBody2D"]
 script = ExtResource("1_xhosw")
 
 [node name="Basebubble" type="Sprite2D" parent="."]
-scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_rk5o2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
