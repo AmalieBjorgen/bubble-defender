@@ -1,6 +1,6 @@
 extends StaticBody2D
 
-var Bullet = preload("res://Scenes/Towers/bubble_bullet.tscn")
+var Bullet = preload("res://Scenes/Towers/PsycicBullet.tscn")
 var bulletDamage = 3
 var pathName
 var currentTargets = []
