@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cy1gcaoancefm"]
+[gd_scene load_steps=3 format=3 uid="uid://btcywybpo2lya"]
 
 [ext_resource type="Curve2D" uid="uid://dkt87mkmh8dfe" path="res://Resources/LevelTestBenchPath.tres" id="1_sofng"]
-[ext_resource type="PackedScene" uid="uid://b8e7m8mk56u6k" path="res://Scenes/Enemies/EnemyKetchup.tscn" id="2_wxtt8"]
+[ext_resource type="PackedScene" uid="uid://dkverjbbp88m7" path="res://Scenes/Enemies/EnemyKetchup.tscn" id="2_wxtt8"]
 
 [node name="Path2D" type="Path2D"]
 position = Vector2(1251.7, 985.628)
