@@ -6,7 +6,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_8qhnp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_srnp2"]
-radius = 14.0357
+radius = 16.0
 
 [node name="PsycicBullet" type="CharacterBody2D"]
 script = ExtResource("1_g7wud")
@@ -23,3 +23,5 @@ shape = SubResource("CircleShape2D_8qhnp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_srnp2")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

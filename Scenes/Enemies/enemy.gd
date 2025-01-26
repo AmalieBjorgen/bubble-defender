@@ -1,12 +1,13 @@
 extends CharacterBody2D
 
 
-@export var speed = 750
+@export var speed = 450
 @export var health = 10
 @export var damage = 10
 @export var money_reward = 10
 
 func _physics_process(delta: float) -> void:
+	print(health)
 	get_parent().set_progress(get_parent().get_progress() + speed * delta)
 	var old_rotation = get_parent().rotation
 	get_parent().rotation = 0
