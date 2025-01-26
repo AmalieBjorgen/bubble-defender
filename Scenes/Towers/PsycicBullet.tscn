@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cw0230tghqlub"]
 
-[ext_resource type="Script" path="res://Scenes/Towers/bubble_bullet.gd" id="1_dba0u"]
+[ext_resource type="Script" path="res://Scenes/Towers/PsycicBullet.gd" id="1_g7wud"]
 [ext_resource type="Texture2D" uid="uid://b7flb0x3ygjm1" path="res://Assets/Projectiles/psy_bubble.png" id="2_37gos"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8qhnp"]
@@ -8,8 +8,8 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_srnp2"]
 radius = 14.0357
 
-[node name="BubbleBullet" type="CharacterBody2D"]
-script = ExtResource("1_dba0u")
+[node name="PsycicBullet" type="CharacterBody2D"]
+script = ExtResource("1_g7wud")
 
 [node name="Basebubble" type="Sprite2D" parent="."]
 scale = Vector2(0.5, 0.5)
@@ -23,6 +23,3 @@ shape = SubResource("CircleShape2D_8qhnp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_srnp2")
-
-[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
